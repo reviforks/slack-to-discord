@@ -84,9 +84,9 @@ function msgParser(e) {
 	if (e.message.author.id === 'DISCORD_BOT_ID') return;
 	var dAvatar = '';
 	if (e.message.author.avatar !== null) {
-		dAvatar = 'https://discordapp.com/api/users/' + e.message.author.id + '/avatars/' + e.message.author.avatar + '.jpg';
+		dAvatar = 'https://discord.com/api/users/' + e.message.author.id + '/avatars/' + e.message.author.avatar + '.jpg';
 	} else {
-		dAvatar = 'https://discordapp.com/assets/322c936a8c8be1b803cd94861bdfa868.png';
+		dAvatar = 'https://discord.com/assets/322c936a8c8be1b803cd94861bdfa868.png';
 	}
 	
 	// Send it to Slack
